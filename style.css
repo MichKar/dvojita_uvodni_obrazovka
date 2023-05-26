@@ -1,0 +1,133 @@
+/* OBECNÉ  */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .container-slider {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+/* LEVÁ ČÁST */
+
+    .slide-left {
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: transform .5s linear;
+    }
+
+    .slide-left > div {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+    }
+
+    .slide-left h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin: 25px;
+    }
+
+    .color-1-slide{
+        background-color: rgb(75, 204, 255);
+    }
+
+    .color-2-slide{
+        background-color: rgb(61, 61, 255);
+    }
+
+    .color-3-slide{
+        background-color: rgb(49, 49, 49);
+    }
+
+    .color-4-slide{
+        background-color: orange;
+    }
+
+
+/* PRAVÁ ČÁST */
+
+    .slide-right {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 40%; 
+        transition: transform 0.5s linear;
+    }
+
+    .slide-right > div {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .image-1 {
+        background: url(img/obr1.jpg);
+    }
+
+    .image-2 {
+        background: url(img/obr2.jpg);
+    }
+
+    .image-3 {
+        background: url(img/obr3.jpg);
+    }
+
+    .image-4 {
+        background: url(img/obr4.jpg);
+    }
+
+
+/* IKONY ŠIPEK */
+
+    .arrow-buttons > div {
+        position: absolute;
+        z-index: 100;
+        left: 40%;
+        top: 53%;
+        cursor: pointer;
+    }
+
+    .arrow-buttons img {
+        width: 30px;
+    }
+
+    .arrow-down img {
+        transform: translate(-100%);
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+    .arrow-down img:hover {
+        border: 1px solid black;
+    }
+
+    .arrow-up img {
+        transform: translateY(-100%);
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    .arrow-up img:hover {
+        border: 1px solid black;
+    }
+
